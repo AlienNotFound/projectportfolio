@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="projectportfolio.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>Adam's Portfolio</title>
+    <link href="style/normalize.css" rel="stylesheet" />
+    <link href="style/mainstyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="biggerHeader()">
+    <form id="form1" runat="server">
+        <header>
+            <nav>
+                <a href="Default.aspx">
+                    <img src="../graphic/icons/logo04.svg" width="85" />
+                </a>
+                <ul>
+                    <asp:Literal ID="litMenu" runat="server"></asp:Literal>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+        <footer>
+            <div id="FooterCont">
+                <p>© 2021 af Adam Dreiøe</p>
+                <div id="contactcol">
+                    <p>Kontakt</p>
+                    <p>adamdreioe@gmail.com</p>
+                </div>
+                <div id="SocialMedia">
+                    <asp:Literal ID="ftLnks" runat="server"></asp:Literal>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    background-color: #000000;
+    position: relative;
+    margin: auto;
+}
+
+#slideshowimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Hide the images by default */
+/*.mySlides {
+    display: none;
+}*/
+
+.mySlides img {
+    height: 800px;
+}
+
+.mySlides {
+    position: absolute;
+    transition: opacity .5s ease-in;
+}
+
+    .mySlides + .mySlides {
+        opacity: 0;
+    }
+
+
+/* Fading animation */
+/*.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}*/

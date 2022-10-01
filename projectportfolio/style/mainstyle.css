@@ -1,0 +1,744 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 97%, rgba(14,77,69,1) 98%, rgba(14,77,69,1) 100%);
+    min-height: 100vh;
+}
+
+/*--- Header ---*/
+header {
+    position: absolute;
+    top: 0;
+    padding: 28px 80px;
+    height: 20vh;
+    width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    z-index: 15;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 40% 100%, 0 70%);
+    background-color: #0e4d45;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    min-width: 10vw;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+    nav a {
+        color: #929289;
+        text-decoration: none;
+    }
+
+#hero {
+    height: 85vh;
+    padding-top: 50px;
+    display: flex;
+    align-content: center;  
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #0e4d45;
+    color: #929289;
+    z-index: 10;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 40% 100%, 0 80%);
+}
+#container-hero {
+    width: 500px;
+    height: 60px;
+    border-bottom: 1px solid #929289;
+    margin-left: 15vw;
+    padding-top: 10vh;
+    position: absolute;
+    top: 50vh;
+}
+
+    #container-hero h1, h3 {
+        margin: 0;
+        font-weight: 300;
+        color: #929289;
+    }
+
+.toppadding {
+    padding-top: 13%;
+    padding-bottom: 5%;
+    min-height: 80vh;
+}
+
+.sidepadding {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#aboutbox {
+    display: flex;
+}
+
+#aboutbox h2 {
+    margin-top: 0px;
+}
+
+#aboutbox p {
+    text-align: justify;
+    margin: 0 3%;
+}
+
+#aboutbox img {
+    width: 30%;
+    height: 30%;
+}
+
+#aboutboxtext {
+    box-sizing: border-box;
+    padding: 0 3%;
+}
+
+/*--- Searchbar ---*/
+.srcbx {
+    width: 450px;
+    margin: 0 auto;
+}
+
+#srcbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: 20px;
+    padding: 3px 20px;
+    border: none;
+    background-color: #eee;
+}
+
+    #srcbar [type="image"] {
+        width: 23px;
+        margin: 3px 0 3px 13px;
+    }
+
+#txtPortSrc {
+    width: 425px;
+    background: none;
+    border: none;
+    border-right: 1px solid #bbb;
+}
+
+#srctags {
+    display: flex;
+    align-items: center;
+}
+
+#srctags p {
+    font-weight: 600;
+}
+
+[type="radio"] {
+    opacity: 0;
+    height: 0;
+}
+
+    [type="radio"]:checked + label {
+        font-weight: 600;
+        color: #000;
+    }
+
+.toppadding label {
+    color: #929289;
+}
+
+.toppadding label :first-of-type{
+    color: #ff0000;
+}
+
+
+tbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#srcTabslit {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hidetab {
+    display: none;
+}
+
+.srcTabsbtn {
+    padding: 4px 3vw;
+    margin: 0 3px;
+    list-style-type: none;
+    display: inline-block;
+    background-color: #ccc;
+}
+
+.srcTabsbtn a {
+    color: #000;
+    text-decoration: none;
+}
+
+#ContentPlaceHolder1_srcTabs_0, #ContentPlaceHolder1_srcTabs_1, #ContentPlaceHolder1_srcTabs_2 {
+    opacity: 0;
+    height: 10vh;
+    padding: 0 3vw;
+}
+/*--- Slideshow ---*/
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    z-index: 0;
+}
+
+#slideshowimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    opacity: .2;
+}
+
+        .mySlides img {
+            width: 99vw;
+            height: 98vh;
+            object-fit: cover;
+            object-position: 0 35%;
+    }
+
+.mySlides {
+    position: absolute;
+    transition: opacity 1.5s ease-in;
+}
+
+    .mySlides + .mySlides {
+        opacity: 0;
+    }
+
+h1 {
+    font-size: 30px;
+    font: monst
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid #929289;
+    width: 200%;
+    margin: 3px 0;
+}
+
+section {
+    min-height: 5vh;
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+
+#pageNm {
+    width: 10%;
+    margin: 30px auto 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#pageNm a {
+    color: #000;
+    font-size: 18px;
+    margin: 0 2%;
+    text-decoration: none;
+}
+
+#showContent {
+    padding-top: 13%;
+    min-height: 51vh;
+    margin: 0 auto;
+    width: 700px;
+}
+
+#showContent img {
+    width: 700px;
+}
+
+#showContent h3 {
+    font-size: 24px;
+    color: #000;
+}
+
+#showContent hr {
+    width: 700px;
+    margin-bottom: 2%
+}
+
+#showContent p {
+    text-align: justify;
+}
+
+#showContent #date {
+    font-style: italic;
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.tab {
+    min-height: 15vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.tab img {
+    width: 435px;
+    height: 620px;
+    object-fit:cover;
+}
+
+.tab a {
+    min-height: 500px;
+    min-width: 100%;
+}
+
+#pimg {
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #0e4d45;
+}
+
+.portimg {
+    width: 490px;
+    height: 490px;
+}
+
+#portentries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#portentries a {
+    min-width: 40%;
+}
+
+#portentries img {
+    width: 450px;
+}
+
+#frontport {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20%;
+    text-align: justify;
+}
+
+#abtsctn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#abtcol {
+    box-sizing: border-box;
+    padding: 15% 0;
+    width: 40%;
+}
+
+#abtcol h3 {
+    color: #000;
+    font-weight: 600;
+}
+
+#abtsctn img {
+    display: block;
+    margin: 50px 5%;
+    width: 450px;
+    height: 450px;
+    clip-path: circle();
+    object-fit: cover;
+}
+
+#abtsctn ul {
+    padding: 0;
+}
+
+#abtsctn li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#abtsctn a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#portPgsBx {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#portPgsBx a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+}
+
+.portPgs {
+    display: inline-block;
+    font-size: 26px;
+}
+
+    .portPgs img {
+        width: 450px;
+        height: 450px;
+        filter: blur(2px) grayscale(40%);
+        object-fit: cover;
+    }
+
+    .portPgs h3 {
+        width: 20.5vw;
+        box-sizing: border-box;
+        padding: 3px 15px;
+        position: absolute;
+        margin-top: 39vh;
+        margin-left: 25px;
+        color: #fff;
+        background: #0008;
+        z-index: 1;
+    }
+
+    .titlebx {
+        width: 80%;
+    }
+
+/*--- Footer ---*/
+footer {
+    height: 250px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    background-color: #0e4d45;
+    clip-path: polygon(60% 0, 100% 50%, 100% 100%, 0 100%, 0 50%);
+    color: #929289;
+}
+
+#FooterCont {
+    height: 50%;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+}
+
+footer img {
+    height: 30px;
+    margin-left: 20px;
+}
+#contactcol {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactcol p {
+    margin: 0;
+}
+
+#contactcol p:first-child {
+    text-align: center;
+    font-weight: 600;
+}
+
+#SocialMedia {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+    header {
+        max-height: 15vh;
+    }
+    .portPgs {
+        width: 370px;
+        height: 370px;
+    }
+
+        .portPgs img {
+            width: 100%;
+            height: 100%;
+        }
+
+    #srcbar [type="image"] {
+        margin-left: 2.5%;
+    }
+
+    .toppadding {
+        padding-top: 19vh;
+    }
+
+    #showContent {
+        padding-top: 215px;
+        min-height: 59vh;
+    }
+
+    .tab {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tab img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .portPgsbx {
+        padding: 100px 0;
+    }
+
+    .portPgs h3 {
+        width: 300px;
+        font-size: 26px;
+        margin-top: 270px;
+    }
+
+    #txtPortSrc {
+        width: 375px;
+    }
+
+    #srcbar {
+        padding: 3px 12px 3px 20px;
+    }
+    .srcbx {
+        margin-bottom: 20px;
+    }
+
+    #pageNm {
+        width: 15%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1250px) {
+    .tab {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    header {
+        height: 14%;
+        clip-path: polygon(0% 0%, 100% 0%, 100% 77%, 40% 100%, 0 77%);
+    }
+    .toppadding {
+        padding-top: 20vh;
+    }
+
+    #showContent {
+        padding-top: 255px;
+        min-height: 54vh;
+    }
+
+    #portPgsBx {
+        margin-top: 30px;
+    }
+
+    .portPgs h3 {
+        width: 395px;
+        margin-top: 28vh;
+    }
+
+    .tab img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .tab a {
+        height: 450px;
+    }
+
+    #srcbar {
+        padding: 3px 2px 3px 20px;
+    }
+
+    .srcbx {
+        width: 45%;
+        padding: 0 24vw;
+        margin-bottom: 25px;
+    }
+
+    #txtPortSrc {
+        width: 90%;
+    }
+}
+
+    @media only screen and (min-width: 1880px) {
+        header {
+            height: 18vh;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 40% 100%, 0 70%);
+        }
+
+        .toppadding {
+            padding-top: 13%;
+        }
+
+        .tab a {
+            height: 600px;
+        }
+
+        .tab img {
+            height: 600px;
+        }
+
+        .portPgs h3 {
+            width: 21vw;
+            margin-top: 37vh;
+        }
+
+        #txtPortSrc {
+            width: 93%;
+        }
+
+        #srcbar {
+            padding: 3px 6px 3px 20px;
+        }
+    }
+
+    @media only screen and (min-width: 2000px) {
+
+        header {
+            height: 16%;
+        }
+
+            header a {
+                font-size: 24px;
+            }
+
+        #container-hero {
+            width: 675px;
+            height: 83px;
+        }
+
+        #container-hero h1 {
+            font-size: 40px;
+        }
+
+        #container-hero h3 {
+            font-size: 28px;
+        }
+
+        .toppadding {
+            padding-top: 11%;
+        }
+
+        .mySlides img {
+            width: 99vw;
+        }
+
+        nav ul li {
+            margin-left: 45px;
+        }
+
+        nav img {
+            width: 34%;
+        }
+
+        body p {
+            font-size: 19px;
+        }
+
+        body h3 {
+            font-size: 22px;
+        }
+
+        .portPgs {
+            width: 600px;
+            height: 600px;
+        }
+
+            .portPgs img {
+                width: 600px;
+                height: 600px;
+            }
+
+            .portPgs h3 {
+                margin-top: 37vh;
+                width: 21vw;
+                font-size: 34px;
+            }
+
+        #abtcol {
+            padding: 10% 0;
+            box-sizing: border-box;
+        }
+
+            #abtcol h3 {
+                font-size: 26px;
+            }
+
+        #txtPortSrc {
+            width: 90.5%;
+            height: 26px;
+            font-size: 20px;
+        }
+
+        #srcbar {
+            padding: 8px 6px 8px 20px;
+            border-radius: 30px;
+        }
+
+        .srcbx {
+            width: 32%;
+            padding: 0 28vw;
+        }
+
+        #srcbar [type="image"] {
+            width: 32px;
+            margin: 3px 0 3px 13px;
+        }
+
+        #pageNm a, .toppadding label {
+            font-size: 19px;
+        }
+
+        .tab img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #showContent h3 {
+            font-size: 34px;
+        }
+
+        #showContent #date {
+            font-size: 20px;
+        }
+    }
+
+@media only screen and (min-width: 2000px) and (max-width: 2449px) {
+    .tab a {
+        min-height: 725px;
+    }
+}
+
+@media only screen and (min-width: 2450px) {
+    .tab {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .tab a {
+        height: 675px;
+    }
+}
+  
